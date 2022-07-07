@@ -2,12 +2,11 @@
 marp: true
 paginate: true
 theme: gaia
-footer: "**2022/07/05 by @daylight55**"
+footer: "**2022/07/07 by @daylight55**"
 ---
 
 <!--
 _class: lead
-_paginate: false
 -->
 # ISUCON本から学ぶ
 # Webパフォーマンスチューニング
@@ -79,3 +78,7 @@ VSCode拡張を使うと手軽にMarkdownでのスライド作成が出来るの
 参考
 - [「Marp」【レビュー】 - 窓の杜](https://forest.watch.impress.co.jp/docs/review/1422278.html)
 - [Marp(Marpit) - Qiita](https://qiita.com/takeshisakuma/items/5a61e6eac123d28602fb)
+
+---
+
+https://github.com/marp-team/marp-cli

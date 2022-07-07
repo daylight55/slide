@@ -17,13 +17,33 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Copy images
-        run: mkdir -p build/docs && cp -R img build/img && cp -R docs/img build/docs/img
+      - name: Create build dir
+        run: mkdir -p build/docs
 
-      - name: Marp Build (README)
+      - name: Copy images
+        run: cp -R img build/img && cp -R docs/img build/docs/img
+
+      - name: Copy README and index
+        run: cp README.md build/ && cp docs/index.html build/docs/
+
+      # - name: Marp Build (README)
+      #   uses: docker://marpteam/marp-cli:v2.0.4
+      #   with:
+      #     args: README.md -o build/index.html
+      #   env:
+      #     MARP_USER: root:root
+
+      - name: Marp Build (README.pdf)
         uses: docker://marpteam/marp-cli:v2.0.4
         with:
-          args: docs/README.md -o build/docs/index.html
+          args: README.md -o build/README.pdf
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (README.pptx)
+        uses: docker://marpteam/marp-cli:v2.0.4
+        with:
+          args: README.md -o build/README.pptx
         env:
           MARP_USER: root:root
 
