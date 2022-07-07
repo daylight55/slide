@@ -2,7 +2,7 @@
 marp: true
 paginate: true
 theme: gaia
-footer: "**2022/07/05 by @dayylight55**"
+footer: "**2022/07/05 by @daylight55**"
 ---
 
 <!--
