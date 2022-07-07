@@ -34,7 +34,7 @@ _paginate: false
 
 ---
 
-![height:380](img/abe_hp.png)
+![height:380](../../img/abe_hp.png)
 http://abehiroshi.la.coocan.jp/
 
 
@@ -76,7 +76,7 @@ _paginate: false
 因みにこのスライドは **Marp** というMarkdownをスライドに起こせるツールを使用して作りました。
 VSCode拡張を使うと手軽にMarkdownでのスライド作成が出来るのでオススメです。
 
-![bg right:40% height:280](img/marp_intro.png)
+![bg right:40% height:280](../../img/marp_intro.png)
 
 参考
 - [「Marp」【レビュー】 - 窓の杜](https://forest.watch.impress.co.jp/docs/review/1422278.html)

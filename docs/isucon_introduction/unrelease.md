@@ -17,6 +17,6 @@ Webサービス (高速稼働する音)
 Aさん「スーパーエンジニアのワイに
 かかればこんなもんよ」
 
-![bg right:40% height:500 opacity:.5](img/job_programmer.png)
+![bg right:40% height:500 opacity:.5](../../img/job_programmer.png)
 
 ---
