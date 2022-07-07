@@ -16,7 +16,6 @@ _paginate: false
 ---
 <!--
 _class: lead
-_paginate: false
 -->
 ## Q. なぜ**パフォーマンスチューニング**が必要
 ## なのでしょうか？
@@ -54,7 +53,6 @@ https://www.webpagetest.org/result/220706_AiDc25_6PJ/
 ---
 <!--
 _class: lead
-_paginate: false
 -->
 ## 速くしろとか簡単に言ってくれるけど
 ## どうすりゃいいのさ
