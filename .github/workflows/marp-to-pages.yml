@@ -54,6 +54,20 @@ jobs:
         env:
           MARP_USER: root:root
 
+      - name: Marp Build (docs folder pdf)
+        uses: docker://marpteam/marp-cli:v2.0.4
+        with:
+          args: -I docs/ -o build/docs/ --pdf
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (docs folder pptx)
+        uses: docker://marpteam/marp-cli:v2.0.4
+        with:
+          args: -I docs/ -o build/docs/ --pptx
+        env:
+          MARP_USER: root:root
+
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: rossjrw/pr-preview-action@v1
