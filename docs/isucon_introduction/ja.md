@@ -65,7 +65,7 @@ _class: lead
 _class: lead
 -->
 ![bg opacity:.3 blur:10px](../img/abe_hp.png)
-## [WebPageTestを使うとページの表示にかかる時間など](https://www.webpagetest.org/result/220706_AiDc25_6PJ/)が得られます。
+## [WebPageTestを使うとRTTの結果](https://www.webpagetest.org/result/220706_AiDc25_6PJ/)が確認できます。
 
 ---
 
