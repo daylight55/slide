@@ -116,9 +116,9 @@ _class: lead
 ---
 
 # どう変わるのか
-s
+開発者は抽象化されたセルフサービス基盤(IDP)でデプロイする
 
-![10%](../img/devops/platform_into_organization.drawio.svg)
+![height:400](../img/devops/platform_into_organization.drawio.svg)
 
 ---
 
@@ -126,7 +126,13 @@ s
 <!--
 _class: lead
 -->
-これは避けられない気もします😭
+# DevOpsを言い換えただけでは？ 🧐
+
+---
+# Platform Enginieeringは何が違うのか
+
+- **Platformを製品として**捉える。
+- これまでも
 
 ---
 
@@ -140,7 +146,7 @@ _class: lead
 
 # 組織文化
 
-- 
+- koko
 
 ---
 
@@ -150,11 +156,11 @@ _class: lead
 
 ---
 
-# 「やりたいことなんてない。これから見つけられるかどうかもわからない。でもみんながやりたいことがあるならそれを援護することはできる」
+<!-- # 「やりたいことなんてない。これから見つけられるかどうかもわからない。でもみんながやりたいことがあるならそれを援護することはできる」
 
 *SHIROBAKO ©「SHIROBAKO」製作委員*
 
-![opacity:.4　bg cover](../img/devops/shirobako_support.jpg)
+![opacity:.4　bg cover](../img/devops/shirobako_support.jpg) -->
 
 ---
 
