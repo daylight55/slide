@@ -25,7 +25,7 @@ _class: lead
 
 # DevOpsの実践度
 
-![bg right 70% 国内企業におけるDevOpsの実践状況の推移](image.png)
+![bg right 70% 国内企業におけるDevOpsの実践状況の推移](../img/devops/devops_graph.png)
 
 -  IDC Japanの調査によると、DevOpsの実践率は年々伸びている。 [^1]
 - 2022年の調査では **59.3%** の実践率
@@ -57,13 +57,32 @@ Programming Language, OS, VCS, Containers, Cloud Providers, Network, Serverless,
 
 # つまり、DevOpsを現場に落とし込むと、、、
 
-![bg right](../img/devops/devops_into_organization.drawio.svg)
+エンドユーザーに届けるまでに多くの技術が関わる
+
+![80%](../img/devops/devops_into_organization.drawio.svg)
 
 ---
 <!--
 _class: lead
 -->
-# こんなに管理しきれない・・・
+# 開発者「こんなに意識しきれない・・・」
+
+![bg vertical right 50% ](../img/devops/sick_noiroze_man.png)
+![bg 50% ](../img/devops/sick_noiroze_woman.png)
+
+---
+# よくある導入
+
+- 「DevOpsチームを新しく作ったから、DevからOpsに渡るまでのセットアップはよろしく！」
+- マイクロサービスごとにセットアップを任せられるチームができる。
+
+![bg vertical right 120%](../img/devops/devops_antipattern_1.png)
+
+---
+<!--
+_class: lead
+-->
+# DevOpsチーム「数が膨大すぎる・・・」
 
 ![bg vertical right 50% ](../img/devops/sick_noiroze_man.png)
 ![bg 50% ](../img/devops/sick_noiroze_woman.png)
@@ -73,7 +92,7 @@ _class: lead
 <!--
 _class: lead
 -->
-# デプロイまでの抽象化が必要
+# デプロイ・運用までの<br>抽象化が必要
 
 ---
 
@@ -84,28 +103,22 @@ _class: lead
 
 ---
 
-# Platform Enginieeringとは
+## Platform Enginieeringとは
+
+![bg right 100%](../img/devops/platform_engineering_gartner.png)
+
+- Garthnerの「先進テクノロジのハイプ・サイクル：2022年」で登場 [^1]
+- 開発者体験と生産性を向上させるためにセルフサービスで利用できるツールチェーンとワークフローを設計・構築する分野 [^2]
+
+[^1]: https://www.gartner.co.jp/ja/newsroom/press-releases/pr-20220816
+[^2]: https://speakerdeck.com/jacopen/platform-engineeringhenozhao-dai
 
 ---
 
-<!--
-_class: lead
--->
-# DevOpsの組織への取り込み方
+# どう変わるのか
+s
 
----
-
-# 失敗例
-
-## DevOpsチーム
-
-![bg right 120%](../img/devops/devops_antipattern_1.png)
-
----
-
-# 成功例
-
-
+![10%](../img/devops/platform_into_organization.drawio.svg)
 
 ---
 
@@ -127,10 +140,7 @@ _class: lead
 
 # 組織文化
 
-
----
-
-
+- 
 
 ---
 
