@@ -21,7 +21,7 @@ jobs:
         run: mkdir -p build/docs
 
       - name: Copy images
-        run: cp -R img build/img && cp -R docs/img build/docs/img
+        run: cp -R docs/img build/docs/img
 
       - name: Copy README and index
         run: cp README.md build/ && cp docs/index.html build/docs/
