@@ -133,6 +133,13 @@ _class: lead
 <!--
 _class: lead
 -->
+# 開発者が多様なツールを意識せずとも開発に集中できるように
+
+---
+
+<!--
+_class: lead
+-->
 # DevOpsや共通基盤を<br>言い換えただけでは？ 🧐
 
 ---
@@ -153,7 +160,7 @@ _class: lead
 <!--
 _class: lead
 -->
-# 開発者を補助するための内部Platformを一つの製品としてデザインする
+# 開発者を補助するための内部Platformを一つの製品としてデザインする<br> => 製品開発と同じアプローチを取る
 
 ---
 <!--
@@ -164,7 +171,7 @@ _class: lead
 
 ---
 
-![bg width:700 height:600](image.png) [^9]
+![bg width:700 height:600](../img/devops/kusamasan_post.png) [^9]
 
 [^9]: https://x.com/jacopen/status/1706218493262323940?s=20
 
@@ -172,10 +179,14 @@ _class: lead
 
 # サイロと文化を改善する
 
-- まず**己を知る**
-  - 組織文化のモデル化と測定
-  - [Westrum の組織類型](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture?hl=ja)
-- 
+- まず**己の組織を知る**
+  - 組織文化のモデル化と測定 例: [Westrum の組織類型](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture?hl=ja)
+- 開発と運用の**責任の共有**
+- アプローチ例
+  - チーム間で同じ立場にある人同士で信頼関係を築く
+  - 現場担当者に部署間の移動を促す
+  - チームの協働を容易にする作業を推進し、成功すれば褒賞を出す
+  - 情報共有のための場作り
 
 ---
 
@@ -183,8 +194,17 @@ _class: lead
 _class: lead
 -->
 
-#  Platformで組織の連携を加速させる
-(具体例はまだ思い浮かびません 😢)
+# 文化改善も変わらず重要
+
+---
+
+
+<!--
+_class: lead
+-->
+
+#  **Platform**で組織の連携を加速させる
+具体例はまだ思い浮かびません 😢
 
 
 ---
@@ -205,6 +225,14 @@ _class: lead
 
 ---
 
+# まとめ
+
+- DevOpsの実践はツール群の複雑な組み合わせにより実現され、認知コストが高い
+- そこでPlatform Engineeringによる製品開発のアプローチで、開発者の認知コストを下げた開発フローを構築
+- しかし、Platformのみでは組織は改善されず、文化改善のアプローチも重要
+- 文化改善に繋がるPlatformをデザインすることが鍵になる(と思われる)
+
+---
 
 **※ 蛇足**
 このスライドは **Marp** というMarkdownをスライドに変換出来るツールで作っています。[^1]
