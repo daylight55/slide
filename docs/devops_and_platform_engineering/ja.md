@@ -235,11 +235,11 @@ _class: lead
 ---
 
 **※ 蛇足**
-このスライドは **Marp** というMarkdownをスライドに変換出来るツールで作っています。[^1]
+このスライドは **Marp** というMarkdownをスライドに変換出来るツールで作っています。[^10]
 スライドをMarkdownで管理してみたいそこのあなた！
 是非お試しを！
 
-[^1]: https://marp.app/
+[^10]: https://marp.app/
 
 ![bg vertical right 80%](../img/slide_repo.png)
 ![bg right 80%](../img/slide_actions.png)
