@@ -10,6 +10,8 @@ _class: lead
 -->
 # DevOpsのこれからと<br>Platform Engineering
 
+2023/09/29
+
 ---
 
 # DevOpsとは
@@ -162,7 +164,7 @@ _class: lead
 
 ---
 
-![width:700 height:600](image.png) [^9]
+![bg width:700 height:600](image.png) [^9]
 
 [^9]: https://x.com/jacopen/status/1706218493262323940?s=20
 
