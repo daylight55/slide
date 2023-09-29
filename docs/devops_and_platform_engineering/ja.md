@@ -203,7 +203,7 @@ _class: lead
 _class: lead
 -->
 
-#  **Platform**で組織の連携を加速させる
+#  **Platform**で組織の文化を改善する
 具体例はまだ思い浮かびません 😢
 
 
