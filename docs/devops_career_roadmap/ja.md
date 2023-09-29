@@ -17,7 +17,8 @@ _class: lead
 
 
 - 「顧客に価値を素早く届けるため、開発・運用が協力する、文化的な姿勢・取り組み」のこと [^1]
-- 企業によって全面に出す定義が異なるため
+- デプロイまでの流れを高速化し、開発・運用のサイロを取り除く文化が重要
+- (企業によってポジショントークがあり、定義が異なるためややこしい)
 
 [^1]: https://www.members-devopslead.com/service
 
@@ -27,11 +28,11 @@ _class: lead
 
 ![bg right 70% 国内企業におけるDevOpsの実践状況の推移](../img/devops/devops_graph.png)
 
--  IDC Japanの調査によると、DevOpsの実践率は年々伸びている。 [^1]
+-  IDC Japanの調査によると、DevOpsの実践率は年々伸びている。 [^2]
 - 2022年の調査では **59.3%** の実践率
 - しかし、結論として「**ビジネス上の効果が得られている企業は増えていない**」とある。
 
-[^1]: https://www.idc.com/getdoc.jsp?containerId=prJPJ49999523
+[^2]: https://www.idc.com/getdoc.jsp?containerId=prJPJ49999523
 
 ---
 
@@ -47,15 +48,15 @@ _class: lead
 
 学習ロードマップとして
 
-Programming Language, OS, VCS, Containers, Cloud Providers, Network, Serverless, IaC, CI/CD Tool, GitOps, ServiceMesh etc...
+`Programming Language, OS, VCS, Containers, Cloud Providers, Network, Serverless, IaC, CI/CD Tool, GitOps, ServiceMesh etc...`
 
-などが挙げられている。[^1]
+などが挙げられている。[^3]
 
-[^1]: https://roadmap.sh/devops
+[^3]: https://roadmap.sh/devops
 
 ---
 
-# つまり、DevOpsを現場に落とし込むと、、、
+# つまり、DevOpsを落とし込むと、、、
 
 エンドユーザーに届けるまでに多くの技術が関わる
 
@@ -73,16 +74,19 @@ _class: lead
 ---
 # よくある導入
 
+## DevOps Team Silo [^4]
 - 「DevOpsチームを新しく作ったから、DevからOpsに渡るまでのセットアップはよろしく！」
-- マイクロサービスごとにセットアップを任せられるチームができる。
+- マイクロサービスごとにセットアップを任せられる。
 
 ![bg vertical right 120%](../img/devops/devops_antipattern_1.png)
+
+[^4]: https://owasp.org/www-pdf-archive/Zero-to-DevSecOps-OWASP-Meetup-02-19-19_-_part_1.pdf
 
 ---
 <!--
 _class: lead
 -->
-# DevOpsチーム「数が膨大すぎる・・・」
+# DevOpsチーム「管理しきれない・・・」
 
 ![bg vertical right 50% ](../img/devops/sick_noiroze_man.png)
 ![bg 50% ](../img/devops/sick_noiroze_woman.png)
@@ -92,7 +96,7 @@ _class: lead
 <!--
 _class: lead
 -->
-# デプロイ・運用までの<br>抽象化が必要
+# デプロイ・運用までを<br>抽象化できるPlatformが必要
 
 ---
 
@@ -107,36 +111,69 @@ _class: lead
 
 ![bg right 100%](../img/devops/platform_engineering_gartner.png)
 
-- Garthnerの「先進テクノロジのハイプ・サイクル：2022年」で登場 [^1]
-- 開発者体験と生産性を向上させるためにセルフサービスで利用できるツールチェーンとワークフローを設計・構築する分野 [^2]
+- Garthnerの「先進テクノロジのハイプ・サイクル：2022年」で登場 [^5]
+- 開発者体験と生産性を向上させるためにセルフサービスで利用できるツールチェーンとワークフローを設計・構築する分野 [^6]
 
-[^1]: https://www.gartner.co.jp/ja/newsroom/press-releases/pr-20220816
-[^2]: https://speakerdeck.com/jacopen/platform-engineeringhenozhao-dai
+[^5]: https://www.gartner.co.jp/ja/newsroom/press-releases/pr-20220816
+[^6]: https://speakerdeck.com/jacopen/platform-engineeringhenozhao-dai?slide=8
 
 ---
 
 # どう変わるのか
-開発者は抽象化されたセルフサービス基盤(IDP)でデプロイする
+開発者は抽象化されたセルフサービス基盤(IDP)でデプロイする [^7]
 
 ![height:400](../img/devops/platform_into_organization.drawio.svg)
 
----
+[^7]: https://speakerdeck.com/jacopen/platform-engineeringhenozhao-dai?slide=18
 
+---
 
 <!--
 _class: lead
 -->
-# DevOpsを言い換えただけでは？ 🧐
+# DevOpsや共通基盤を<br>言い換えただけでは？ 🧐
 
 ---
 # Platform Enginieeringは何が違うのか
 
-- **Platformを製品として**捉える。
-- これまでも
+- 顧客 = 開発者 として、『価値』を届けることを重視する。
+  - 価値: 開発者の認知負荷を軽減する
+- **Platformを製品として**捉える。 => 『Platform as a Product』
+- ゴールデンパスを用意する [^8]
+
+事例
+- [開発者向けの基盤をつくる - メルカリ](https://speakerdeck.com/tcnksm/kai-fa-zhe-xiang-kefalseji-pan-wotukuru)
+- [ヤフーで KaaS ベースの PaaS ができるまで](https://www.docswell.com/s/ydnjp/ZDED1L-2023-03-06-151122#p1)
+
+[^8]: https://cloud.google.com/blog/ja/products/application-development/golden-paths-for-engineering-execution-consistency
+
+---
+<!--
+_class: lead
+-->
+# 開発者を補助するための内部Platformを一つの製品としてデザインする
+
+---
+<!--
+_class: lead
+-->
+
+#  忘れてはならない<br>**DevOpsは文化**
 
 ---
 
-# Howにこだわると危険
+![width:700 height:600](image.png) [^9]
+
+[^9]: https://x.com/jacopen/status/1706218493262323940?s=20
+
+---
+
+# サイロと文化を改善する
+
+- まず**己を知る**
+  - 組織文化のモデル化と測定
+  - [Westrum の組織類型](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture?hl=ja)
+- 
 
 ---
 
@@ -144,23 +181,17 @@ _class: lead
 _class: lead
 -->
 
-# 組織文化
+#  Platformで組織の連携を加速させる
+(具体例はまだ思い浮かびません 😢)
 
-- koko
-
----
-
-## まとめ
-
-- DevOpsの
 
 ---
 
-<!-- # 「やりたいことなんてない。これから見つけられるかどうかもわからない。でもみんながやりたいことがあるならそれを援護することはできる」
+# 「やりたいことなんてない。これから見つけられるかどうかもわからない。でもみんながやりたいことがあるならそれを援護することはできる」
 
 *SHIROBAKO ©「SHIROBAKO」製作委員*
 
-![opacity:.4　bg cover](../img/devops/shirobako_support.jpg) -->
+![opacity:.4　bg cover](../img/devops/shirobako_support.jpg)
 
 ---
 
@@ -171,6 +202,7 @@ _class: lead
 # DevOposは愛❤️
 
 ---
+
 
 **※ 蛇足**
 このスライドは **Marp** というMarkdownをスライドに変換出来るツールで作っています。[^1]
